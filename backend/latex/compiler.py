@@ -8,16 +8,19 @@ def compile_latex(tex_content: str, filename: str) -> str:
 
     tex_path = os.path.join(OUTPUT_DIR, f"{filename}.tex")
 
-    with open(tex_path, "w") as f:
+    with open(tex_path, "w", encoding="utf-8") as f:
         f.write(tex_content)
 
-    result = subprocess.run(
-        ["pdflatex", "-interaction=nonstopmode", "-output-directory", output_dir, tex_path],
-        capture_output=True,
-        text=True
+    subprocess.run(
+        [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-output-directory",
+            OUTPUT_DIR,
+            tex_path,
+        ],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
     )
-
-# Do NOT raise error even if LaTeX warnings exist
-
 
     return os.path.join(OUTPUT_DIR, f"{filename}.pdf")
