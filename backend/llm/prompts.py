@@ -22,12 +22,14 @@ CONTENT OBJECTIVES:
 5. Prioritise clarity and impact over length.
 
 LENGTH CONTROL:
-• Total word count (summary + skills + experience): 380–420 words.
-• Absolute maximum: 430 words.
-• Summary: 70–90 words.
-• 3–5 bullets per role.
+• Total word count (summary + skills + experience): 450–520 words.
+• Absolute maximum: 550 words.
+• Summary: 85–110 words.
+• 3–5 bullets per relevant role.
 • At least half of the bullets should include measurable impact.
 • When including metrics, integrate them naturally into the sentence.
+• Prioritise clarity and business context over compression.
+
 
 WRITING RULES:
 • Use strong action verbs aligned with the job description.
@@ -39,12 +41,31 @@ WRITING RULES:
 • Every sentence must read like a complete professional thought.
 
 SUMMARY RULES:
-• Avoid generic openings such as “Results-driven” or “Experienced professional”.
-• Begin with domain positioning, specialisation, or business impact.
+
+• Do NOT begin with generic CV clichés such as:
+  - “Results-driven”
+  - “Experienced professional”
+  - “Highly motivated”
+  - “Detail-oriented”
+  - “Dynamic”
+  - “Proven track record”
+
+• Start with domain positioning, specialisation, or scope instead.
+  Examples of acceptable openings:
+  - “Fraud Analyst specialising in transaction monitoring and AML investigations…”
+  - “Risk and compliance professional focused on fraud detection within financial services…”
+  - “Data analyst supporting fraud and financial crime functions…”
+
+• Position the candidate by function and domain, not personality traits.
+
 • Blend tools into context rather than listing them.
-• Avoid excessive commas.
-• Focus on business outcomes, not responsibilities.
-• Keep tone natural and mid-level professional.
+
+• Focus on business impact, decision-making contribution, and risk mitigation outcomes.
+
+• Avoid exaggerated confidence language.
+
+• The summary must sound natural and credible for a mid-level professional.
+
 
 SKILLS RULES:
 • 3–4 categories maximum.
@@ -66,9 +87,14 @@ WORK EXPERIENCE RULES:
 • Vary sentence structure across bullets.
 • Ensure bullets sound human-written, not generated.
 • Avoid identical structural patterns across roles.
+• If space allows, expand bullets with additional business context rather than compressing metrics.
+
 
 FINAL NATURALNESS CHECK:
 Before returning output, internally refine once to remove robotic phrasing or compressed KPI-style structure.
+• Rewrite the summary once to remove generic clichés and corporate buzzwords.
+• Ensure it reads like a professional introduction, not marketing copy.
+
 
 JOB DESCRIPTION:
 {job_description}
