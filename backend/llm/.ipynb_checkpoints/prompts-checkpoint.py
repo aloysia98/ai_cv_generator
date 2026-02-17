@@ -109,19 +109,18 @@ Work Experience
 • Only inject keywords that can be truthfully inferred from the base CV. Do not introduce tools, certifications, or experiences not present or reasonably implied.
 • Max 3–5 bullets per job for ATS clarity. Include only the most relevant roles to the target job.
 
-Bullet Refinement Rules:
+Bullet Structure Enforcement:
 
-• Maximum 4 bullets per role (default to 3 if possible).
-• Each bullet must:
-  - Start with a strong action verb.
-  - Contain a tool OR method.
-  - Include impact or business outcome.
-• Avoid stacked verbs (e.g., "Analysed and developed and supported").
-• Avoid overly technical phrasing unless required.
-• Keep sentence length under 20 words where possible.
-• Remove repetitive compliance/governance phrasing.
-• Avoid sounding templated.
-• Vary sentence structure across bullets.
+• Write bullets as full professional sentences.
+• Do not use parentheses for metrics.
+• Integrate metrics into the sentence naturally.
+• Include light business context (why it mattered).
+• Avoid KPI-fragment structure.
+• Ensure each bullet reads like it was written by a human analyst, not generated.
+• Avoid identical sentence structures across bullets.
+• Avoid slide-deck or CV-template phrasing.
+• Bullets must sound like mid-level professional experience.
+
 
 Flow & Tone Adjustment:
 
