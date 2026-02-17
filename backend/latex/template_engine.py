@@ -10,25 +10,23 @@ def render_template(cv_data):
     role = escape_latex(cv_data.headline_role)
     summary = escape_latex(cv_data.summary)
 
-    # Skills (grouped by category)
-    skills_sections = []
+    # Skills (grouped into single bullet per category)
+    skills_items = []
 
     for category, skills_list in cv_data.skills.items():
         escaped_category = escape_latex(category)
 
-        items = "\n".join(
-            [f"\\item {escape_latex(skill)}" for skill in skills_list]
-        )
+        # Escape each skill
+        escaped_skills = [escape_latex(skill) for skill in skills_list]
 
-        section = f"""
-\\textbf{{{escaped_category}}}
-\\begin{{itemize}}
-{items}
-\\end{{itemize}}
-"""
-        skills_sections.append(section)
+        # Join skills with comma
+        skills_inline = ", ".join(escaped_skills)
 
-    skills_latex = "\n".join(skills_sections)
+        item = f"\\item \\textbf{{{escaped_category}:}} {skills_inline}"
+        skills_items.append(item)
+
+    skills_latex = "\\begin{itemize}\n" + "\n".join(skills_items) + "\n\\end{itemize}"
+
 
     experience_sections = []
 
@@ -38,9 +36,8 @@ def render_template(cv_data):
         )
 
         section = f"""
-\\textbf{{{escape_latex(job.job_title)}}} — {escape_latex(job.organization)} \\\\
-{escape_latex(job.location)} \\\\
-{escape_latex(job.start_date)} -- {escape_latex(job.end_date)}
+\\textbf{{{escape_latex(job.job_title)}}}\\hspace{{3pt}}\\textbar{{}}{escape_latex(job.organization)} \\hspace{{3pt}}\\textbar{{}}\\hspace{{3pt}}
+{escape_latex(job.start_date)} -- {escape_latex(job.end_date)}\\textbar{{}}\\hspace{{3pt}}{escape_latex(job.location)} 
 \\begin{{itemize}}
 {responsibilities}
 \\end{{itemize}}
