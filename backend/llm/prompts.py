@@ -76,6 +76,9 @@ Humanisation Rules for Summary:
 • Maximum 90 words.
 • Target 70–85 words for optimal density.
 • Focus on impact and business outcomes rather than responsibilities.
+• Avoid compressed KPI-style phrasing.
+• Ensure summary reads like a senior professional introduction, not a metrics list.
+
 
 
 Skills
@@ -120,6 +123,16 @@ Bullet Refinement Rules:
 • Avoid sounding templated.
 • Vary sentence structure across bullets.
 
+Flow & Tone Adjustment:
+
+• Write bullets as natural professional statements, not KPI fragments.
+• Do not use parentheses for impact metrics.
+• Integrate metrics into the sentence.
+• Ensure each bullet reads as one complete professional thought.
+• Vary sentence openings (avoid repeating same structure).
+• Prioritise clarity and readability over compression.
+
+
 Model Precision Constraint:
 
 • Do not expand sentences unnecessarily.
@@ -142,7 +155,7 @@ Before returning output:
 • If still above 420, compress summary.
 • Maintain density score ≥ 8 (high quantification, low redundancy).
 • Never exceed 430 words.
-
+• If total word count falls below 360 words, expand Summary with stronger business context and expand most relevant role with one additional high-impact bullet.
 
 Return ONLY valid JSON in this format:
 
