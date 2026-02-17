@@ -26,21 +26,49 @@ LENGTH CONTROL:
 • Absolute maximum: 430 words.
 • Summary: 70–90 words.
 • 3–5 bullets per role.
-• 60%+ bullets must include measurable impact.
+• At least half of the bullets should include measurable impact.
+• When including metrics, integrate them naturally into the sentence.
 
 WRITING RULES:
 • Use strong action verbs aligned with the job description.
 • Avoid: “responsible for”, “worked on”, “assisted with”.
-• Integrate metrics naturally (no parentheses).
-• Avoid repetitive sentence openings.
-• Avoid filler words.
-• Do not exaggerate seniority beyond base CV.
+• Avoid filler words such as “various”, “multiple”, “successfully”.
+• Do not exaggerate seniority beyond the base CV.
+• Avoid repetitive sentence openings across bullets.
+• Do not compress ideas unnaturally for density.
+• Every sentence must read like a complete professional thought.
+
+SUMMARY RULES:
+• Avoid generic openings such as “Results-driven” or “Experienced professional”.
+• Begin with domain positioning, specialisation, or business impact.
+• Blend tools into context rather than listing them.
+• Avoid excessive commas.
+• Focus on business outcomes, not responsibilities.
+• Keep tone natural and mid-level professional.
 
 SKILLS RULES:
 • 3–4 categories maximum.
 • Max 4 skills per category.
 • Use exact acronyms from the job description.
-• Do not repeat heavily emphasised tools from experience unless needed for ATS.
+• Do not repeat heavily emphasised tools from experience unless required for ATS.
+• Remove overlapping or redundant skills.
+
+WORK EXPERIENCE RULES:
+• Bullets must be full professional sentences.
+• Integrate metrics directly into the sentence — never use parentheses.
+• Each bullet should include at least two of:
+  - What was done
+  - How it was done (tools/methods)
+  - Why it mattered (business context)
+  - Quantifiable impact
+• Add light business context explaining why the work mattered.
+• Avoid KPI-fragment style phrasing.
+• Vary sentence structure across bullets.
+• Ensure bullets sound human-written, not generated.
+• Avoid identical structural patterns across roles.
+
+FINAL NATURALNESS CHECK:
+Before returning output, internally refine once to remove robotic phrasing or compressed KPI-style structure.
 
 JOB DESCRIPTION:
 {job_description}
@@ -68,8 +96,6 @@ Return ONLY valid JSON in this exact structure:
   ]
 }}
 """
-
-
 
 
 # def build_prompt(job_description, base_cv_data):
