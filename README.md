@@ -1,12 +1,15 @@
----
-title: Ai Cv Generator
-emoji: 💻
-colorFrom: yellow
-colorTo: yellow
-sdk: gradio
-sdk_version: 6.5.1
-app_file: app.py
-pinned: false
----
+# AI CV Generator
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+## Setup
+
+1. Install LaTeX (pdflatex must be available)
+2. Create virtual environment
+3. Install dependencies:
+
+pip install -r requirements.txt
+
+4. Add Gemini API key to .env
+
+5. Run:
+
+python -m app.main

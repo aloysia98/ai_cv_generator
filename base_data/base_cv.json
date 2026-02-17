@@ -1,0 +1,169 @@
+{
+  "contact": {
+    "full_name": "Aloysia Francis Vadukut",
+    "email": "aloysia.francis98@gmail.com",
+    "phone": "+44 7760174418",
+    "linkedin": "linkedin.com/in/aloysia-francis-vadukut",
+    "location": "Leeds, United Kingdom"
+  },
+  "summary": "Data and Risk Analyst with experience across financial services, analytics, and operational environments. Proven ability to analyse large, complex datasets using SQL, Python, and Excel to generate actionable insights, optimise processes, and support data-driven decision-making. Experienced in fraud detection, transaction monitoring, reporting, data quality assurance, and cross-functional collaboration. Strong analytical mindset with a foundation in statistical methods and data modelling, combined with the ability to communicate findings clearly to both technical and non-technical stakeholders in fast-paced, regulated settings.",
+  "skills": {
+    "data_analysis_programming": [
+      "SQL",
+      "Python",
+      "R",
+      "Advanced Excel",
+      "Data manipulation",
+      "Statistical analysis"
+    ],
+    "reporting_visualisation": [
+      "Power BI",
+      "Tableau",
+      "Matplotlib",
+      "Dashboard development",
+      "PowerPoint reporting"
+    ],
+    "fraud_risk_analytics": [
+      "Transaction monitoring",
+      "Fraud detection",
+      "AML awareness",
+      "Alert investigation",
+      "Risk assessment"
+    ],
+    "data_engineering_foundations": [
+      "Data cleaning",
+      "ETL processes",
+      "Data validation",
+      "Data quality assurance",
+      "Workflow automation"
+    ],
+    "research_insight_generation": [
+      "Trend analysis",
+      "KPI tracking",
+      "Root-cause analysis",
+      "Structured reporting"
+    ],
+    "tools_platforms": [
+      "Databricks",
+      "Snowflake",
+      "PySpark",
+      "AWS (foundational)",
+      "Azure (foundational)",
+      "Git (foundational)"
+    ],
+    "professional_skills": [
+      "Stakeholder communication",
+      "Cross-functional collaboration",
+      "Project coordination",
+      "Time management",
+      "Attention to detail"
+    ]
+  },
+  "work_experience": [
+    {
+      "job_title": "Retail Associate",
+      "organization": "T K Maxx",
+      "location": "Leeds, United Kingdom",
+      "start_date": "11/2024",
+      "end_date": "Present",
+      "responsibilities": [
+        "Maintained accurate transactional and inventory records",
+        "Supported stock reconciliation and inventory updates",
+        "Managed high-volume customer interactions while maintaining documentation standards"
+      ]
+    },
+    {
+      "job_title": "Data Researcher (Volunteering)",
+      "organization": "Travel Radar",
+      "location": "Remote, United Kingdom",
+      "start_date": "06/2025",
+      "end_date": "Present",
+      "responsibilities": [
+        "Automated ETL pipelines integrating structured aviation data from 100+ airlines (35% efficiency improvement)",
+        "Engineered enriched route and fleet datasets using Python and SQL (25% reporting accuracy improvement)",
+        "Designed and optimised MySQL data warehouse (40% scalability and query performance improvement)",
+        "Developed operational dashboards in Excel and Power BI (30% reduction in manual reporting time)"
+      ]
+    },
+    {
+      "job_title": "Hospitality Staff (Kiosk)",
+      "organization": "Leeds United Football Club",
+      "location": "Leeds, United Kingdom",
+      "start_date": "06/2024",
+      "end_date": "02/2025",
+      "responsibilities": [
+        "Supported high-footfall matchday operations",
+        "Managed throughput and peak demand",
+        "Worked collaboratively under pressure to meet KPIs"
+      ]
+    },
+    {
+      "job_title": "Data Annotation Specialist (ML Training Data) (Volunteering)",
+      "organization": "STOP THE TRAFFIK",
+      "location": "Remote, United Kingdom",
+      "start_date": "06/2025",
+      "end_date": "07/2025",
+      "responsibilities": [
+        "Annotated and validated 200+ multilingual records for NLP model training (20% precision improvement)",
+        "Standardised taxonomy structures and labelling frameworks",
+        "Conducted data cleansing and QA across 20+ global region datasets",
+        "Improved annotation workflow efficiency using Label Studio (25% reduction in turnaround time)"
+      ]
+    },
+    {
+      "job_title": "Data Analyst – Transaction Monitoring",
+      "organization": "South Indian Bank",
+      "location": "Thrissur, India",
+      "start_date": "09/2022",
+      "end_date": "09/2023",
+      "responsibilities": [
+        "Tuned fraud detection thresholds (15% reduction in false positives)",
+        "Produced 50+ compliance dashboards and risk reports (30% increase in audit transparency)",
+        "Optimised Clari5 workflows (10% improvement in alert handling speed)",
+        "Conducted SQL-based investigations into anomalous transactions (20% faster case resolution)"
+      ]
+    },
+    {
+      "job_title": "Customer Support & Data Associate Analyst",
+      "organization": "South Indian Bank",
+      "location": "Malappuram, India",
+      "start_date": "08/2021",
+      "end_date": "09/2022",
+      "responsibilities": [
+        "Managed and validated high-volume customer and transaction data using Finacle",
+        "Resolved 1,500+ queries with 98% satisfaction rate",
+        "Analysed transaction patterns to identify fraud trends (18% reduction in repeat escalations)",
+        "Documented process guidelines and audit logs",
+        "Collaborated on pilot fraud monitoring workflows"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc Data Science and Analytics",
+      "institution": "University of Leeds",
+      "grade": "2:1",
+      "start_date": "09/2023",
+      "end_date": "09/2024",
+      "details": "Dissertation focused on evaluating prediction performance across multiple outcomes using neural network models."
+    },
+    {
+      "degree": "M.Sc Physics",
+      "institution": "Christ College, Irinjalakuda",
+      "grade": "71.8%",
+      "start_date": "06/2019",
+      "end_date": "08/2021"
+    },
+    {
+      "degree": "B.Sc Physics",
+      "institution": "Vimala College, Thrissur",
+      "grade": "86.6%",
+      "start_date": "06/2016",
+      "end_date": "05/2019"
+    }
+  ],
+  "certifications": [
+    "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+    "Microsoft Office Specialist Associate (Office 2019)"
+  ]
+}
