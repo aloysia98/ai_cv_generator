@@ -8,7 +8,7 @@ client = InferenceClient(
     token=os.getenv("HF_TOKEN")
 )
 
-# def call_llm(prompt: str) -> str:
+def call_llm(prompt: str) -> str:
 #     response = client.chat_completion(
 #         messages=[
 #             {"role": "system", "content": "You are a professional CV optimization assistant."},
