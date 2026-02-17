@@ -10,12 +10,15 @@ client = InferenceClient(
 
 def call_llm(prompt: str) -> str:
     response = client.chat_completion(
+        model=MODEL_ID,
         messages=[
-            {"role": "system", "content": "You are a professional CV optimization assistant."},
+            {"role": "system", "content": SYSTEM},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=900,
-        temperature=0.4,
+        temperature=0.6,
+        top_p=0.9,
+        repetition_penalty=1.1,
+        max_tokens=1200
     )
 
     return response.choices[0].message.content

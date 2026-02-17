@@ -36,8 +36,8 @@ def render_template(cv_data):
         )
 
         section = f"""
-\\textbf{{{escape_latex(job.job_title)}}}\\hspace{{3pt}}\\textbar{{}}{escape_latex(job.organization)} \\hspace{{3pt}}\\textbar{{}}\\hspace{{3pt}}
-{escape_latex(job.start_date)} -- {escape_latex(job.end_date)}\\textbar{{}}\\hspace{{3pt}}{escape_latex(job.location)} 
+\\textbf{{{escape_latex(job.job_title)}}}\\hspace{{3pt}}\\textbar{{}}\\hspace{{3pt}}{escape_latex(job.organization)} \\hspace{{3pt}}\\textbar{{}}\\hspace{{3pt}}
+{escape_latex(job.start_date)} -- {escape_latex(job.end_date)}\\hspace{{3pt}}\\textbar{{}}\\hspace{{3pt}}{escape_latex(job.location)} 
 \\begin{{itemize}}
 {responsibilities}
 \\end{{itemize}}

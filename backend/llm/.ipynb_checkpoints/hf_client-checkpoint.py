@@ -1,7 +1,7 @@
 import os
 from huggingface_hub import InferenceClient
 
-MODEL_ID = "mistralai/Mistral-7B-Instruct-v0.2"
+MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct"
 
 client = InferenceClient(
     model=MODEL_ID,
@@ -9,12 +9,16 @@ client = InferenceClient(
 )
 
 def call_llm(prompt: str) -> str:
-    response = client.text_generation(
-        prompt,
-        max_new_tokens=900,
-        temperature=0.4,
-        do_sample=True,
-        return_full_text=False
+    response = client.chat_completion(
+        model=MODEL_ID,
+        messages=[
+            {"role": "system", "content": SYSTEM},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.6,
+        top_p=0.9,
+        repetition_penalty=1.1,
+        max_tokens=1200
     )
 
-    return response
+    return response.choices[0].message.content

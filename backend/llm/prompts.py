@@ -24,7 +24,7 @@ CONTENT OBJECTIVES:
 LENGTH CONTROL:
 • Total word count (summary + skills + experience): 450–520 words.
 • Absolute maximum: 550 words.
-• Summary: 85–110 words.
+• Summary: 100–110 words.
 • 3–5 bullets per relevant role.
 • At least half of the bullets should include measurable impact.
 • When including metrics, integrate them naturally into the sentence.
