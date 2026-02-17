@@ -1,7 +1,7 @@
 import os
 from huggingface_hub import InferenceClient
 
-MODEL_ID = "HuggingFaceH4/zephyr-7b-beta"
+MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct"
 
 client = InferenceClient(
     model=MODEL_ID,
