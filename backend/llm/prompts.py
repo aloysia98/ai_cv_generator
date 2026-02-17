@@ -24,7 +24,7 @@ CONTENT OBJECTIVES:
 LENGTH CONTROL:
 • Total word count (summary + skills + experience): 450–520 words.
 • Absolute maximum: 550 words.
-• Summary: 100–110 words.
+• Summary: 150–200 words.
 • 3–5 bullets per relevant role.
 • At least half of the bullets should include measurable impact.
 • When including metrics, integrate them naturally into the sentence.
@@ -57,14 +57,15 @@ SUMMARY RULES:
   - “Data analyst supporting fraud and financial crime functions…”
 
 • Position the candidate by function and domain, not personality traits.
-
 • Blend tools into context rather than listing them.
-
 • Focus on business impact, decision-making contribution, and risk mitigation outcomes.
-
 • Avoid exaggerated confidence language.
-
 • The summary must sound natural and credible for a mid-level professional.
+• Mention industry context or operating environment (e.g., retail banking, regulated financial services).
+• Reference scale where possible (volume, portfolio size, transaction flow).
+• Indicate business contribution, not just task execution.
+• Avoid single-sentence generic summaries.
+• Use 2–3 well-balanced sentences rather than one compressed sentence.
 
 
 SKILLS RULES:
@@ -84,10 +85,14 @@ WORK EXPERIENCE RULES:
   - Quantifiable impact
 • Add light business context explaining why the work mattered.
 • Avoid KPI-fragment style phrasing.
-• Vary sentence structure across bullets.
 • Ensure bullets sound human-written, not generated.
 • Avoid identical structural patterns across roles.
 • If space allows, expand bullets with additional business context rather than compressing metrics.
+• Vary bullet rhythm across roles.
+• Do not always begin with an action verb.
+• Occasionally begin with scope, business context, or outcome.
+• Avoid using the same sentence structure repeatedly.
+• At least one bullet per role should emphasise collaboration or cross-functional impact.
 
 
 FINAL NATURALNESS CHECK:

@@ -24,7 +24,7 @@ def call_llm(prompt: str) -> str:
             {"role": "system", "content": "You are a professional CV optimization assistant."},
             {"role": "user", "content": prompt}
         ],
-        temperature=0.6,
+        temperature=0.65,
         top_p=0.9,
         max_tokens=1200
     )
