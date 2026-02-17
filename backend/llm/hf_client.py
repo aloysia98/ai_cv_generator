@@ -8,11 +8,20 @@ client = InferenceClient(
     token=os.getenv("HF_TOKEN")
 )
 
-def call_llm(prompt: str) -> str:
+# def call_llm(prompt: str) -> str:
+#     response = client.chat_completion(
+#         messages=[
+#             {"role": "system", "content": "You are a professional CV optimization assistant."},
+#             {"role": "user", "content": prompt}
+#         ],
+#         max_tokens=900,
+#         temperature=0.4,
+#     )
+
+    # return response.choices[0].message.content
     response = client.chat_completion(
-        model=MODEL_ID,
         messages=[
-            {"role": "system", "content": SYSTEM},
+            {"role": "system", "content": "You are a professional CV optimization assistant."},
             {"role": "user", "content": prompt}
         ],
         temperature=0.6,
