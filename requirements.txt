@@ -2,5 +2,4 @@ gradio
 requests
 pydantic
 python-dotenv
-openai
 huggingface_hub
