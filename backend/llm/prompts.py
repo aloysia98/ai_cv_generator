@@ -1,6 +1,6 @@
 def build_prompt(job_description, base_cv_data):
     return f"""
-You are a senior CV strategist specialising in ATS optimisation and keyword alignment.
+You are a senior CV strategist specialising in ATS optimisation and keyword alignment within regulated financial services.
 
 Your task:
 Rewrite the CV so it aligns precisely with the job description while remaining truthful to the base CV data.
@@ -11,95 +11,115 @@ OUTPUT REQUIREMENTS:
 • No markdown.
 • No code fences.
 • No extra text.
+• No first-person language ("I", "my", "we").
 • If a value is unknown, return an empty string or empty list.
 • Do not fabricate experience, tools, or certifications.
 
-CONTENT OBJECTIVES:
+--------------------------------------------------
+CONTENT OBJECTIVES
+--------------------------------------------------
+
 1. Identify the 3 core role priorities from the job description.
 2. Extract exact keywords (tools, systems, terminology, action verbs).
 3. Insert missing but relevant keywords naturally.
 4. Maintain professional, human tone.
-5. Prioritise clarity and impact over length.
+5. Prioritise clarity, business context, and credibility.
 
-LENGTH CONTROL:
-• Total word count (summary + skills + experience): 450–520 words.
-• Absolute maximum: 550 words.
-• Summary: 150–200 words.
-• 3–5 bullets per relevant role.
-• At least half of the bullets should include measurable impact.
-• When including metrics, integrate them naturally into the sentence.
-• Prioritise clarity and business context over compression.
+--------------------------------------------------
+LENGTH CONTROL
+--------------------------------------------------
 
+• Total word count (summary + skills + experience): 500–600 words.
+• Absolute maximum: 620 words.
+• Summary: 170–220 words.
+• 4–5 bullets per relevant role.
+• Minimum 28 words per bullet.
+• At least 60% of bullets must include measurable impact.
+• Every bullet must include business context explaining why the work mattered.
 
-WRITING RULES:
-• Use strong action verbs aligned with the job description.
+If output is below 480 words, expand:
+• Add more business context to bullets.
+• Expand summary with industry positioning and operating environment.
+
+--------------------------------------------------
+WRITING RULES
+--------------------------------------------------
+
+• No first-person pronouns.
 • Avoid: “responsible for”, “worked on”, “assisted with”.
 • Avoid filler words such as “various”, “multiple”, “successfully”.
 • Do not exaggerate seniority beyond the base CV.
-• Avoid repetitive sentence openings across bullets.
+• Avoid repetitive sentence openings.
 • Do not compress ideas unnaturally for density.
-• Every sentence must read like a complete professional thought.
+• Every bullet must be a complete professional thought.
+• No KPI-fragment style phrasing.
 
-SUMMARY RULES:
+--------------------------------------------------
+SUMMARY RULES
+--------------------------------------------------
 
-• Do NOT begin with generic CV clichés such as:
+• Do NOT begin with generic CV clichés:
   - “Results-driven”
   - “Experienced professional”
   - “Highly motivated”
-  - “Detail-oriented”
-  - “Dynamic”
   - “Proven track record”
 
-• Start with domain positioning, specialisation, or scope instead.
-  Examples of acceptable openings:
-  - “Fraud Analyst specialising in transaction monitoring and AML investigations…”
-  - “Risk and compliance professional focused on fraud detection within financial services…”
-  - “Data analyst supporting fraud and financial crime functions…”
+• Start with domain positioning and functional scope.
 
-• Position the candidate by function and domain, not personality traits.
-• Blend tools into context rather than listing them.
-• Focus on business impact, decision-making contribution, and risk mitigation outcomes.
-• Avoid exaggerated confidence language.
-• The summary must sound natural and credible for a mid-level professional.
-• Mention industry context or operating environment (e.g., retail banking, regulated financial services).
-• Reference scale where possible (volume, portfolio size, transaction flow).
-• Indicate business contribution, not just task execution.
-• Avoid single-sentence generic summaries.
-• Use 2–3 well-balanced sentences rather than one compressed sentence.
+• Write 2–3 strong sentences (not one compressed sentence).
 
+• Include:
+  - Industry context (e.g., regulated financial services, retail banking).
+  - Type of risk exposure handled.
+  - Scale (transaction volume, reporting frequency, system usage).
+  - Business contribution (risk mitigation, audit support, compliance impact).
 
-SKILLS RULES:
+• Blend tools naturally into context.
+• Avoid listing tools consecutively.
+• Avoid exaggerated marketing tone.
+• The summary must sound credible for a mid-level analyst.
+
+--------------------------------------------------
+SKILLS RULES
+--------------------------------------------------
+
 • 3–4 categories maximum.
-• Max 4 skills per category.
+• Maximum 4 skills per category.
 • Use exact acronyms from the job description.
-• Do not repeat heavily emphasised tools from experience unless required for ATS.
-• Remove overlapping or redundant skills.
+• Remove redundancy.
+• Do not repeat tools already heavily demonstrated in experience unless required for ATS.
 
-WORK EXPERIENCE RULES:
-• Bullets must be full professional sentences.
-• Integrate metrics directly into the sentence — never use parentheses.
-• Each bullet should include at least two of:
+--------------------------------------------------
+WORK EXPERIENCE RULES
+--------------------------------------------------
+
+• 4–5 bullets per relevant role.
+• Minimum 28 words per bullet.
+• Maximum 45 words per bullet.
+• Every bullet must include at least two of:
   - What was done
-  - How it was done (tools/methods)
+  - How it was done (tools/systems/methods)
   - Why it mattered (business context)
   - Quantifiable impact
-• Add light business context explaining why the work mattered.
-• Avoid KPI-fragment style phrasing.
-• Ensure bullets sound human-written, not generated.
-• Avoid identical structural patterns across roles.
-• If space allows, expand bullets with additional business context rather than compressing metrics.
-• Vary bullet rhythm across roles.
-• Do not always begin with an action verb.
-• Occasionally begin with scope, business context, or outcome.
-• Avoid using the same sentence structure repeatedly.
-• At least one bullet per role should emphasise collaboration or cross-functional impact.
 
+• Integrate metrics naturally into sentences.
+• Never use parentheses for metrics.
+• Avoid identical sentence rhythm across bullets.
+• At least one bullet per role must demonstrate cross-functional collaboration.
+• At least one bullet per role must demonstrate analytical decision-making.
 
-FINAL NATURALNESS CHECK:
-Before returning output, internally refine once to remove robotic phrasing or compressed KPI-style structure.
-• Rewrite the summary once to remove generic clichés and corporate buzzwords.
-• Ensure it reads like a professional introduction, not marketing copy.
+--------------------------------------------------
+FINAL NATURALNESS CHECK
+--------------------------------------------------
 
+Before returning output:
+• Remove robotic phrasing.
+• Remove corporate buzzwords.
+• Ensure sentences read as professional narrative, not slide bullets.
+• Ensure summary does not contain first-person pronouns.
+• Ensure word count is at least 500 words.
+
+--------------------------------------------------
 
 JOB DESCRIPTION:
 {job_description}
@@ -127,6 +147,138 @@ Return ONLY valid JSON in this exact structure:
   ]
 }}
 """
+
+
+
+# def build_prompt(job_description, base_cv_data):
+#     return f"""
+# You are a senior CV strategist specialising in ATS optimisation and keyword alignment.
+
+# Your task:
+# Rewrite the CV so it aligns precisely with the job description while remaining truthful to the base CV data.
+
+# OUTPUT REQUIREMENTS:
+# • Return ONLY valid JSON.
+# • No explanations.
+# • No markdown.
+# • No code fences.
+# • No extra text.
+# • If a value is unknown, return an empty string or empty list.
+# • Do not fabricate experience, tools, or certifications.
+
+# CONTENT OBJECTIVES:
+# 1. Identify the 3 core role priorities from the job description.
+# 2. Extract exact keywords (tools, systems, terminology, action verbs).
+# 3. Insert missing but relevant keywords naturally.
+# 4. Maintain professional, human tone.
+# 5. Prioritise clarity and impact over length.
+
+# LENGTH CONTROL:
+# • Total word count (summary + skills + experience): 450–520 words.
+# • Absolute maximum: 550 words.
+# • Summary: 150–200 words.
+# • 3–5 bullets per relevant role.
+# • At least half of the bullets should include measurable impact.
+# • When including metrics, integrate them naturally into the sentence.
+# • Prioritise clarity and business context over compression.
+
+
+# WRITING RULES:
+# • Use strong action verbs aligned with the job description.
+# • Avoid: “responsible for”, “worked on”, “assisted with”.
+# • Avoid filler words such as “various”, “multiple”, “successfully”.
+# • Do not exaggerate seniority beyond the base CV.
+# • Avoid repetitive sentence openings across bullets.
+# • Do not compress ideas unnaturally for density.
+# • Every sentence must read like a complete professional thought.
+
+# SUMMARY RULES:
+
+# • Do NOT begin with generic CV clichés such as:
+#   - “Results-driven”
+#   - “Experienced professional”
+#   - “Highly motivated”
+#   - “Detail-oriented”
+#   - “Dynamic”
+#   - “Proven track record”
+
+# • Start with domain positioning, specialisation, or scope instead.
+#   Examples of acceptable openings:
+#   - “Fraud Analyst specialising in transaction monitoring and AML investigations…”
+#   - “Risk and compliance professional focused on fraud detection within financial services…”
+#   - “Data analyst supporting fraud and financial crime functions…”
+
+# • Position the candidate by function and domain, not personality traits.
+# • Blend tools into context rather than listing them.
+# • Focus on business impact, decision-making contribution, and risk mitigation outcomes.
+# • Avoid exaggerated confidence language.
+# • The summary must sound natural and credible for a mid-level professional.
+# • Mention industry context or operating environment (e.g., retail banking, regulated financial services).
+# • Reference scale where possible (volume, portfolio size, transaction flow).
+# • Indicate business contribution, not just task execution.
+# • Avoid single-sentence generic summaries.
+# • Use 2–3 well-balanced sentences rather than one compressed sentence.
+
+
+# SKILLS RULES:
+# • 3–4 categories maximum.
+# • Max 4 skills per category.
+# • Use exact acronyms from the job description.
+# • Do not repeat heavily emphasised tools from experience unless required for ATS.
+# • Remove overlapping or redundant skills.
+
+# WORK EXPERIENCE RULES:
+# • Bullets must be full professional sentences.
+# • Integrate metrics directly into the sentence — never use parentheses.
+# • Each bullet should include at least two of:
+#   - What was done
+#   - How it was done (tools/methods)
+#   - Why it mattered (business context)
+#   - Quantifiable impact
+# • Add light business context explaining why the work mattered.
+# • Avoid KPI-fragment style phrasing.
+# • Ensure bullets sound human-written, not generated.
+# • Avoid identical structural patterns across roles.
+# • If space allows, expand bullets with additional business context rather than compressing metrics.
+# • Vary bullet rhythm across roles.
+# • Do not always begin with an action verb.
+# • Occasionally begin with scope, business context, or outcome.
+# • Avoid using the same sentence structure repeatedly.
+# • At least one bullet per role should emphasise collaboration or cross-functional impact.
+
+
+# FINAL NATURALNESS CHECK:
+# Before returning output, internally refine once to remove robotic phrasing or compressed KPI-style structure.
+# • Rewrite the summary once to remove generic clichés and corporate buzzwords.
+# • Ensure it reads like a professional introduction, not marketing copy.
+
+
+# JOB DESCRIPTION:
+# {job_description}
+
+# BASE CV DATA:
+# {base_cv_data}
+
+# Return ONLY valid JSON in this exact structure:
+
+# {{
+#   "headline_role": "...",
+#   "summary": "...",
+#   "skills": {{
+#     "Category Name": ["Skill 1", "Skill 2", "Skill 3"]
+#   }},
+#   "work_experience": [
+#     {{
+#       "job_title": "...",
+#       "organization": "...",
+#       "location": "...",
+#       "start_date": "...",
+#       "end_date": "...",
+#       "responsibilities": ["Bullet 1", "Bullet 2", "Bullet 3"]
+#     }}
+#   ]
+# }}
+# """
 
 
 # def build_prompt(job_description, base_cv_data):
