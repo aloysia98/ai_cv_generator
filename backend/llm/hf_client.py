@@ -9,12 +9,13 @@ client = InferenceClient(
 )
 
 def call_llm(prompt: str) -> str:
-    response = client.text_generation(
-        prompt,
-        max_new_tokens=900,
+    response = client.chat_completion(
+        messages=[
+            {"role": "system", "content": "You are a professional CV optimization assistant."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=900,
         temperature=0.4,
-        do_sample=True,
-        return_full_text=False
     )
 
-    return response
+    return response.choices[0].message.content
