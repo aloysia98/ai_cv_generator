@@ -27,7 +27,7 @@ def generate_cv(job_description: str) -> str:
 
     safe_role = parsed_data.headline_role.replace(" ", "_")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"CV_{safe_role}_{timestamp}"
+    filename = f"Aloysia_Francis_{safe_role}_CV"
 
     pdf_path = compile_latex(tex_content, filename)
 

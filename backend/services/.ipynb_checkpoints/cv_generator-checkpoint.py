@@ -3,7 +3,7 @@ from datetime import datetime
 
 from backend.config import BASE_CV_PATH
 from backend.llm.prompts import build_prompt
-from backend.llm.openai_client import call_llm
+from backend.llm.hf_client import call_llm
 from backend.parser.response_parser import parse_llm_response
 from backend.latex.template_engine import render_template
 from backend.latex.compiler import compile_latex
@@ -27,7 +27,7 @@ def generate_cv(job_description: str) -> str:
 
     safe_role = parsed_data.headline_role.replace(" ", "_")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"CV_{safe_role}_{timestamp}"
+    filename = f"Aloysia_Francis_{safe_role}_CV"
 
     pdf_path = compile_latex(tex_content, filename)
 
