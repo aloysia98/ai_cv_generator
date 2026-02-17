@@ -1,15 +1,14 @@
+---
+title: AI CV Generator
+emoji: 📄
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+---
+
 # AI CV Generator
 
-## Setup
-
-1. Install LaTeX (pdflatex must be available)
-2. Create virtual environment
-3. Install dependencies:
-
-pip install -r requirements.txt
-
-4. Add Gemini API key to .env
-
-5. Run:
-
-python -m app.main
+Paste a job description and generate a tailored CV PDF using Hugging Face LLM + LaTeX.
