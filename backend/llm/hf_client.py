@@ -1,7 +1,7 @@
 import os
 from huggingface_hub import InferenceClient
 
-MODEL_ID = "mistralai/Mistral-7B-Instruct-v0.2"
+MODEL_ID = "HuggingFaceH4/zephyr-7b-beta"
 
 client = InferenceClient(
     model=MODEL_ID,
